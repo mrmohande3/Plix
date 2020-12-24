@@ -1,0 +1,15 @@
+﻿<UserControl
+    x:Class="PlixP.Views.Dialogs.AddCategoryDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:prism="http://prismlibrary.com/"
+    Width="350"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    Background="Transparent"
+    TextElement.FontSize="13"
+    TextElement.FontWeight="Regular"
+    TextOptions.TextFormattingMode="Ideal"
+    TextOptions.TextRenderingMode="Auto">
+    <materialDesign:Card Width="350" Padding="10" />
+</UserControl>

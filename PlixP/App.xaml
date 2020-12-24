@@ -1,0 +1,44 @@
+﻿<prism:PrismApplication
+    x:Class="PlixP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:PlixP"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:materialDesignDemo="clr-namespace:PlixP"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:showMeTheXaml="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+    xmlns:smtxAe="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <hc:Theme Name="HandyTheme" Skin="Dark" />
+            </ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary x:Key="DictionaryTest">
+                <system:String x:Key="str1a">String 1A</system:String>
+                <system:String x:Key="str1b">String 1B</system:String>
+                <system:String x:Key="str1c">String 1C</system:String>
+                <system:String x:Key="str1d">String 1A</system:String>
+                <system:String x:Key="str1e">String 1B</system:String>
+                <system:String x:Key="str1f">String 1C</system:String>
+            </ResourceDictionary>
+
+            <ResourceDictionary x:Key="Material">
+
+                <ResourceDictionary.MergedDictionaries>
+                    <materialDesign:BundledTheme
+                        BaseTheme="Dark"
+                        PrimaryColor="Yellow"
+                        SecondaryColor="Orange" />
+                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+            <SolidColorBrush x:Key="PrimaryBrush" Color="#f1c40f" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>
