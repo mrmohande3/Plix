@@ -6,6 +6,7 @@ using Prism.Ioc;
 using PlixP.Views;
 using System.Windows;
 using AutoMapper;
+using HandyControl.Themes;
 using Microsoft.EntityFrameworkCore;
 using PlixP.Extentions;
 using PlixP.Models;
@@ -41,6 +42,7 @@ namespace PlixP
             AutoMapperConfig.ConfigurationMapper();
             App.Current.ConfigureExceptionHandling(AppDomain.CurrentDomain);
             MovieServiceRealTime.Instance.StartReal();
+            ThemeManager.Current.ApplicationTheme = ApplicationTheme.Dark;
             return Container.Resolve<MainWindow>();
         }
        

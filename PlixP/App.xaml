@@ -15,7 +15,8 @@
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
-                <hc:Theme Name="HandyTheme" Skin="Dark" />
+                <hc:ThemeResources />
+                <hc:Theme />
             </ResourceDictionary.MergedDictionaries>
             <ResourceDictionary x:Key="DictionaryTest">
                 <system:String x:Key="str1a">String 1A</system:String>
