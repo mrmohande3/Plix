@@ -26,7 +26,7 @@ plix use sqlite to manage movies information and need internet connection just t
 <img align = "center" src="screenshots/HomePage.png" width=100%>
 
 ## MovieDialog
-<img align = "center" src="screenshots/HomePage.png" width=100%>
+<img align = "center" src="screenshots/MovieDialog.png" width=100%>
 
 ## Settings
 <img align = "center" src="screenshots/Settings.png" width=100%>
