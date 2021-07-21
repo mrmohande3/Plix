@@ -354,7 +354,7 @@ namespace PlixP.Services
                             MovieCount = 1,
                             Name = trim
                         };
-                        foreach (var movie in Movies.Where(m=>m.Genre.Contains(trim)))
+                        foreach (var movie in Movies.Where(m=>m.Genre!=null && m.Genre.Contains(trim)))
                         {
                             var poster = movie.Poster;
                             if (!genres.Any(g => g.Image == poster))
@@ -362,7 +362,7 @@ namespace PlixP.Services
                         }
 
                         if (item.Image == null)
-                            item.Image = Movies.FirstOrDefault(m => m.Genre.Contains(trim))?.Poster;
+                            item.Image = Movies.FirstOrDefault(m => m.Genre != null && m.Genre.Contains(trim))?.Poster;
                         genres = genres.OrderByDescending(g => g.MovieCount).ToList();
                         genres.Add(item);
                     }
@@ -374,7 +374,7 @@ namespace PlixP.Services
         }
         public async Task<List<Movie>> SelectByGenre(string genre)
         {
-            return (await GetMovies()).Where(m => m.Genre.Contains(genre))
+            return (await GetMovies()).Where(m => m.Genre != null && m.Genre.Contains(genre))
                          .ToList();
         }
         public async Task DeleteMovie(Movie movie)
